@@ -26,6 +26,7 @@ root.render(
 // 9. npm i leva (installed - no use)
 // 10. npm i gsap (installed)
 // 11. npm i -g serve (installed)
+// 12. npm i gh-pages (installed)
 /*
 
 EmailJs for email mailing
