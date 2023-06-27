@@ -19,7 +19,20 @@ function App() {
   useEffect(() => {
     main();
     setupModal();
+
+    // Marquee width
+    const targetNode = document.querySelector('#marquee .b-text');
+    const computedStyle = getComputedStyle(targetNode);
+    setTimeout(() => {
+      const width = targetNode.offsetWidth +
+        parseInt(computedStyle.marginLeft) +
+        parseInt(computedStyle.marginRight);
+      document.getElementById("marquee").style.width = `${width * 2 + 16}px`;
+    }, 100);
+    // Marquee width <END>
+
   });
+
 
   return (
     <Wrapper>

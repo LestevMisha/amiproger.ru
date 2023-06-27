@@ -36,7 +36,7 @@ export default function FirstSection() {
 
                             <div id="marquee">
 
-                                <Zoom left>
+                                <Fade>
                                     <div
                                         className="b-text b-text_2em b-text_500 b-text_align-left b-text_uppercase b-text_dis-sel">
                                         · HTML5 ·
@@ -45,7 +45,7 @@ export default function FirstSection() {
                                         Flexbox · BEM · PHP8 · Git · SQL · Webflow · WordPress · Swift
                                         · C++ · Python
                                     </div>
-                                </Zoom>
+                                </Fade>
 
                                 <div
                                     className="b-text b-text_2em b-text_500 b-text_align-left b-text_uppercase b-text_dis-sel">

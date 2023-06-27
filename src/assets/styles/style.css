@@ -31,6 +31,7 @@
     right: 0;
     bottom: 0;
     transform: translate(25%, 20%);
+    z-index: -1;
 }
 
 .b-input {
@@ -42,6 +43,7 @@
     margin-bottom: 1em;
     padding: 0;
     color: #a7a7a7;
+    background-color: #ffffff00;
     font-size: 1em;
 }
 
@@ -399,6 +401,7 @@ h1 {
     width: 40%;
     min-width: 12em;
     height: 3.8rem;
+    color: #000;
     background-color: #fff;
     border-radius: 0.5em;
     font-weight: 500;
@@ -709,12 +712,6 @@ t-grey {
     color: #7a7a7a;
 }
 
-t-point {
-    display: list-item;
-    margin-left: 1em;
-    margin-bottom: 1em;
-}
-
 .b-code {
     width: 100%;
     font-size: 1.4em;
@@ -743,48 +740,6 @@ t-mark {
     align-items: center;
     border: 0.1em solid;
     border-radius: 50%;
-    margin-right: 1em;
-}
-
-t-pointer {
-    color: #4c45d6;
-    font-size: 1rem !important;
-    padding: 0.9em;
-    width: 1em;
-    height: 1em;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.1em solid;
-    border-radius: 25%;
-    margin-right: 1em;
-}
-
-t-pointer_green {
-    color: #18c37d;
-    font-size: 1rem !important;
-    padding: 0.9em;
-    width: 1em;
-    height: 1em;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.1em solid;
-    border-radius: 25%;
-    margin-right: 1em;
-}
-
-t-pointer_red {
-    color: #ee3769;
-    font-size: 1rem !important;
-    padding: 0.9em;
-    width: 1em;
-    height: 1em;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.1em solid;
-    border-radius: 25%;
     margin-right: 1em;
 }
 
@@ -941,7 +896,7 @@ anim {
 /* marquee text infinite movement */
 #marquee {
     display: block;
-    width: 352em;
+    width: fit-content;
     top: 49%;
     position: relative;
     overflow: hidden;
@@ -951,8 +906,8 @@ anim {
 
 #marquee div {
     float: left;
-    width: 50%;
     color: #353535;
+    white-space: nowrap;
 }
 
 
@@ -970,6 +925,14 @@ anim {
 
 span {
     display: inline-block;
+}
+
+.b-icon {
+    width: 1.2em;
+    min-width: 1.2em;
+    height: auto;
+    margin-right: 0.5em;
+    margin-bottom: auto;
 }
 
 
@@ -1294,12 +1257,6 @@ img {
         flex-direction: column;
     }
 
-    t-pointer_red,
-    t-pointer {
-        margin-top: 0.3em;
-        margin-bottom: auto;
-    }
-
     /* For responsive-grid <END> */
 
 
@@ -1334,7 +1291,6 @@ img {
         width: 100%;
         border: none;
         padding: 2em 0 !important;
-        align-items: center !important;
     }
 
     .b-text.b-text_desc.b-text_desc_v-1 {
@@ -1585,12 +1541,6 @@ img {
 
     .b-grid-block.b-grid-block_tag-sub-main {
         width: 72%;
-    }
-
-    t-pointer_red,
-    t-pointer {
-        margin-top: 0.3em;
-        margin-bottom: auto;
     }
 
     /* For responsive-grid <END> */

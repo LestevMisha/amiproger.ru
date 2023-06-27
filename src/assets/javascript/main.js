@@ -1,3 +1,5 @@
+import { useEffect } from "react"
+
 export const main = function () {
 
     // Copy Telegram link -->
@@ -56,6 +58,5 @@ export const main = function () {
         });
     });
     // Grid hover the current pointer <END>
-
 
 };
