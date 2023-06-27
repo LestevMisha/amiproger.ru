@@ -1,19 +1,51 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <React.Fragment>
     <App />
-  </React.StrictMode>
+  </React.Fragment>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// npm start (don't forget choose correct derictory otherwise you'll get an error)
 
-// npm i gh-pages
+// 0. npm i
+// 0. npm install source-map-loader
+
+// 1. npm i framer-motion (installed)
+// 2. npm i react-reveal (installed)
+// 3. npm i styled-components (installed)
+
+// 4 npm i three (installed)
+// 5. npm i @react-three/fiber (installed)
+// 6. npm i @react-three/drei (installed)
+// 7. npm i postprocessing (installed - no use)
+// 8. npm i @react-three/postprocessing (installed - no use)
+// 9. npm i leva (installed - no use)
+// 10. npm i gsap (installed)
+// 11. npm i -g serve (installed)
+/*
+
+EmailJs for email mailing
+// 12. npm i emailjs-com --save (installed)
+
+*/
+
+
+/*
+
+Used colors:
+
+1. grey: #7a7a7a
+2. white: #ffffff
+3. green: #18c37d
+4. white-purple: #decff7
+5. purple: #ee3769
+6. violet-gradient: linear-gradient(135deg, #BF7BFF, #3A34B5)
+7. violet: #4c45d6
+
+*/
+
+
