@@ -11,27 +11,15 @@ import { styled } from 'styled-components';
 // react
 import { React, useEffect } from "react";
 // javascript
-import { main } from "./assets/javascript/main"
+import { Main } from "./assets/javascript/main"
 import { setupModal } from "./assets/javascript/modal"
 
 function App() {
-
   useEffect(() => {
-    main();
+    const main = new Main();
+    main.componentDidMount();
     setupModal();
-
-    // Marquee width
-    const targetNode = document.querySelector('#marquee .b-text');
-    const computedStyle = getComputedStyle(targetNode);
-    setTimeout(() => {
-      const width = targetNode.offsetWidth +
-        parseInt(computedStyle.marginLeft) +
-        parseInt(computedStyle.marginRight);
-      document.getElementById("marquee").style.width = `${width * 2 + 16}px`;
-    }, 100);
-    // Marquee width <END>
-
-  });
+  }, []);
 
 
   return (
