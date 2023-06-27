@@ -1,0 +1,11 @@
+Model Information:
+* title:	catoon coffe
+* source:	https://sketchfab.com/3d-models/catoon-coffe-e872b8ff61644e699492bd13140e5571
+* author:	mister_monopoly (https://sketchfab.com/mister_monopoly)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "catoon coffe" (https://sketchfab.com/3d-models/catoon-coffe-e872b8ff61644e699492bd13140e5571) by mister_monopoly (https://sketchfab.com/mister_monopoly) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
