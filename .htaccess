@@ -1,2 +1,5 @@
 RewriteEngine On
-DirectoryIndex build/index.html
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} !^/build/
+RewriteRule ^(.*)$ /build/$1 [L]

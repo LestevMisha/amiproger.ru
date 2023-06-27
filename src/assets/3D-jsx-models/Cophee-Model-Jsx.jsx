@@ -11,7 +11,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/3D-gltf-models/catoon_coffe/scene.gltf')
+  const { nodes, materials } = useGLTF('/3D-gltf-models/cophee.glb')
   return (
     <group {...props} dispose={null}>
       <group position={[0.012, 0.054, -0.009]} rotation={[0.017, 0.055, -0.209]} scale={[1, 1.056, 1.074]}>
