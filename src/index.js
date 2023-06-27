@@ -10,6 +10,7 @@ root.render(
 );
 
 // npm start (don't forget choose correct derictory otherwise you'll get an error)
+// npm run deploy (deploying the project for commercial use)
 
 // 0. npm i
 // 0. npm install source-map-loader
