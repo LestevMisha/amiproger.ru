@@ -138,10 +138,15 @@ body {
 }
 
 .line {
+    color: 323233;
     height: auto;
     position: relative;
     width: 100%;
-    border-bottom: 0.1em solid #323233;
+    border-bottom: 0.1em solid;
+}
+
+.line.line_dark {
+    color: #1c1c1c;
 }
 
 .abs_header {
@@ -250,8 +255,13 @@ body {
     height: 6em
 }
 
+.divider_2em {
+    height: 2em
+}
+
 .divider_5em {
-    height: 5em
+    height: 5em;
+    min-height: 5em;
 }
 
 
@@ -707,6 +717,7 @@ t-point {
 
 .b-code {
     width: 100%;
+    font-size: 1.4em;
     border: 0.1em solid #4c45d6;
     background-color: #0d0a2a;
     padding: 0.4em 0.4em 0.4em 1em;
@@ -1715,8 +1726,6 @@ img {
         font-size: 22px;
     }
 }
-
-
 
 
 @media only screen and (max-width: 890px) {

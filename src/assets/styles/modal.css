@@ -125,3 +125,15 @@ body.modal-active {
         width: 60%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    #modal-container {
+        box-sizing: border-box !important;
+        font-size: 16px !important;
+    }
+
+    .modal {
+        padding: 1em !important;
+        width: 92% !important;
+    }
+}

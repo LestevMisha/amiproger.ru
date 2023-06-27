@@ -139,6 +139,27 @@ export default function TrirdSection() {
                     </div>
                 </div>
             </div>
+
+            <div className="divider_10em"></div>
+            <div className="line line_dark"></div>
+            <div className="divider_2em"></div>
+            <div className="line line_dark"></div>
+            <div className="divider_2em"></div>
+            <div className="line line_dark"></div>
+            <div className="divider_2em"></div>
+            <div className="line line_dark"></div>
+            <div className="divider_2em"></div>
+            <div className="line line_dark"></div>
+            <div className="divider_2em"></div>
+            <div className="line line_dark"></div>
+            <div className="divider_2em"></div>
+            <div className="line line_dark"></div>
+            <div className="divider"></div>
+            <div className="b-code b-code_green" style={{width: "fit-content", margin: "0 auto", padding: "0.5em 2em"}}>
+                HeyHelp Inc.
+            </div>
+            <div className="divider_5em"></div>
+
         </section>
     )
 }
