@@ -8,7 +8,7 @@ export class Main extends React.Component {
         tg_btns.forEach(tg => {
             tg.addEventListener("click", () => {
                 var ref = "https://t.me/MishaLestev";
-                
+
                 try {
                     document.location.href = ref;
                 } catch (error) {
@@ -60,15 +60,5 @@ export class Main extends React.Component {
         });
         // Grid hover the current pointer <END>
 
-
-        // Marquee width
-        const targetNode = document.querySelector('#marquee .b-text');
-        const computedStyle = getComputedStyle(targetNode);
-        const width = targetNode.offsetWidth +
-            parseInt(computedStyle.marginLeft) +
-            parseInt(computedStyle.marginRight);
-        document.getElementById("marquee").style.width = `${width * 2 + 600}px`;
-        // Marquee width <END>
     }
-
 };

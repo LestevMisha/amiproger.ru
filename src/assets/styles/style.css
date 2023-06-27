@@ -218,7 +218,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: initial;
     justify-content: center;
     width: 100%;
 }
@@ -400,7 +400,7 @@ h1 {
 .b-button.b-button_v-1\.0 {
     width: 40%;
     min-width: 12em;
-    height: 3.8rem;
+    height: 100%;
     color: #000;
     background-color: #fff;
     border-radius: 0.5em;
@@ -425,7 +425,7 @@ h1 {
 .b-button.b-button_v-1\.1 {
     width: 60%;
     min-width: 14em;
-    height: 3.8rem;
+    height: 100%;
     background-color: #ffffff00;
     font-weight: 500;
     font-size: 1.2em;
@@ -539,6 +539,8 @@ h1 {
     /* IE 10 and IE 11 */
     user-select: none;
     /* Standard syntax */
+
+    font-size: 1em !important;
 }
 
 .b-text.b-text_uppercase {
@@ -710,6 +712,12 @@ t-warm {
 
 t-grey {
     color: #7a7a7a;
+}
+
+t-point {
+    display: list-item;
+    margin-left: 1em;
+    margin-bottom: 1em;
 }
 
 .b-code {
@@ -897,7 +905,7 @@ anim {
 #marquee {
     display: block;
     width: fit-content;
-    top: 49%;
+    top: 0;
     position: relative;
     overflow: hidden;
     margin: 4em 0;
@@ -1353,10 +1361,6 @@ img {
         display: none;
     }
 
-    .specialized_el {
-        font-size: 10px;
-    }
-
     .abs-center-container {
         width: 92%;
         display: flex;
@@ -1414,10 +1418,6 @@ img {
     .divider_mob {
         display: none;
     }
-
-    .specialized_el {
-        font-size: 12px;
-    }
 }
 
 /* Small devices such as large phones (640px and up) */
@@ -1439,10 +1439,6 @@ img {
 
     :root {
         font-size: 10px;
-    }
-
-    .specialized_el {
-        font-size: 14px;
     }
 
     .for_mob {
@@ -1545,11 +1541,13 @@ img {
 
     /* For responsive-grid <END> */
 
-
+    .b-line {
+        opacity: 0.3;
+    }
 }
 
 /* Large devices such as laptops (1024px and up) */
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1200px) {
     :root {
         font-size: 14px;
     }
@@ -1559,10 +1557,6 @@ img {
     }
 
     #telegram {
-        font-size: 16px;
-    }
-
-    .specialized_el {
         font-size: 16px;
     }
 
@@ -1579,10 +1573,6 @@ img {
     }
 
     #telegram {
-        font-size: 18px;
-    }
-
-    .specialized_el {
         font-size: 18px;
     }
 
@@ -1671,10 +1661,6 @@ img {
     .h-text_-2x .b-text.b-text_600 {
         font-size: 1.6em;
     }
-
-    .specialized_el {
-        font-size: 22px;
-    }
 }
 
 
@@ -1712,5 +1698,25 @@ img {
 
     .shadow {
         box-shadow: inset -14em 0 10em 0.1em #000000;
+    }
+}
+
+
+@media only screen and (min-width: 1640px) {
+    .b-line {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    body {
+        font-size: 26px;
+    }
+}
+
+
+@media only screen and (min-width: 4320px) {
+    body {
+        font-size: 36px;
     }
 }

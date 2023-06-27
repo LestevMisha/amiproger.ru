@@ -1,9 +1,26 @@
-import { React } from 'react'
+import { React, useEffect } from 'react'
 import HoverEach from "../HoverEach"
 // For animations
 import { Fade, Zoom } from "react-reveal/";
 
 export default function FirstSection() {
+
+
+    useEffect(() => {
+        function setUpMarqueeWidth() {
+            const screen_w = document.body.clientWidth;
+            // Marquee width
+            const targetNode = document.querySelector('#marquee .b-text');
+            const computedStyle = getComputedStyle(targetNode);
+            const width = targetNode.offsetWidth +
+                parseInt(computedStyle.marginLeft) +
+                parseInt(computedStyle.marginRight);
+            document.getElementById("marquee").style.width = `${(width * 2) + (screen_w / 2)}px`;
+        }
+        setUpMarqueeWidth();
+        window.addEventListener("resize", setUpMarqueeWidth);
+    }, []);
+
 
     return (
         <div className="common">
@@ -14,7 +31,7 @@ export default function FirstSection() {
                     <div className="b-block">
                         <div className="divider"></div>
 
-                        <div className="b-block b-block_col b-block_col_60% b-block_col_min-w_50em">
+                        <div className="b-block b-block_col b-block_col_60% b-block_col_min-w_50em" style={{paddingLeft: "1em"}}>
 
 
                             <div className="b-text b-text_dis-sel b-text_500 b-text_4em b-text_align-left" id="title">
@@ -22,14 +39,17 @@ export default function FirstSection() {
                                     {
                                         ["A Journey", "Through the Spectrum", "of My Skills"]
                                             .map((words, wordsIndex) => (
-                                                <span key={wordsIndex} id={wordsIndex}>
-                                                    {[...words].map((letter, letterIndex) => (
-                                                        <HoverEach key={letterIndex} id={letterIndex}>
-                                                            {letter === " " ? "\u00A0" : letter}
-                                                        </HoverEach>
-                                                    ))
-                                                    }
-                                                </span>
+                                                <div key={wordsIndex}>
+                                                    <span id={wordsIndex}>
+                                                        {[...words].map((letter, letterIndex) => (
+                                                            <HoverEach key={letterIndex} id={letterIndex}>
+                                                                {letter === " " ? "\u00A0" : letter}
+                                                            </HoverEach>
+                                                        ))
+                                                        }
+                                                    </span>
+                                                    <br />
+                                                </div>
                                             ))}
                                 </t-white>
                             </div>
@@ -38,6 +58,7 @@ export default function FirstSection() {
 
                                 <Fade>
                                     <div
+                                        style={{ marginLeft: "0.2em" }}
                                         className="b-text b-text_2em b-text_500 b-text_align-left b-text_uppercase b-text_dis-sel">
                                         · HTML5 ·
                                         JavaScript · JQuery
@@ -48,6 +69,7 @@ export default function FirstSection() {
                                 </Fade>
 
                                 <div
+                                    style={{ marginLeft: "0.2em" }}
                                     className="b-text b-text_2em b-text_500 b-text_align-left b-text_uppercase b-text_dis-sel">
                                     · HTML5 ·
                                     JavaScript · JQuery
@@ -69,7 +91,7 @@ export default function FirstSection() {
                                             <t-point>
                                                 In 2021 I started
                                                 to learn web programming, in 2022 I had started to make the real projects in the
-                                                Moscow company <t-emphasize>On-Target</t-emphasize>.<br></br>
+                                                Moscow company <br /><t-emphasize>On-Target</t-emphasize>.<br></br>
                                             </t-point>
                                         </Fade>
 
@@ -85,7 +107,7 @@ export default function FirstSection() {
                                 </div>
                             </div>
 
-                            <div className="b-block b_block_left">
+                            <div className="b-block b_block_left" style={{ minHeight: "3.5em" }}>
 
                                 <Fade bottom>
                                     <button className="b-button b-button_v-1.0 telegram_btn_js" id="telegram">
