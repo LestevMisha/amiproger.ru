@@ -1,4 +1,6 @@
 RewriteEngine On
+DirectoryIndex build/index.html
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^/]+)/$ $1.php
 RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.php
